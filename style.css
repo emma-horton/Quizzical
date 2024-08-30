@@ -1,0 +1,82 @@
+body{
+    background-color: #d4e3fe;
+}
+* {
+    box-sizing: border-box;
+}
+#header{
+    border: 4px solid #000000;
+    background-color: #f4a4c0;
+}
+
+div{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    text-align: center;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+#score-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#GameOver{
+    display: none;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#webpage{
+    display: none;
+    
+}
+
+/* COPIED FROM WEEK 2 EXERCISE ON CSS ANIMATIONS */
+@keyframes rainbow {
+    0% {background-color: red;}
+    17% {background-color: orange;}
+    34% {background-color: yellow;}
+    51% {background-color: green;}
+    68% {background-color: blue;}
+    85% {background-color: indigo;}
+    100% {background-color: violet;}
+}
+
+#GameOver {
+    animation-name: rainbow;
+    animation-duration: 6s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+#button-list button {
+    background-color: white; 
+    color: black; 
+    padding: 10px 20px; 
+    text-align: center;
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    margin: 4px 2px; 
+    cursor: pointer; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+}
+
+
+#score-container button {
+    background-color: #f4a4c0;
+    color: black; 
+    padding: 10px 20px; 
+    text-align: center;
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    margin: 4px 2px; 
+    cursor: pointer; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+}

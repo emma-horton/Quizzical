@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="script.js"></script>
+    <div id="header">
+        <h1>Quizzical</h1>
+        <h3>Produced by 230017667 for assessment 1 for CS5003</h3>
+    </div>
+
+    <div id="webpage">
+       
+        <div>
+            <h3>Timer: </h3>
+            <div id='countdown'>10</div>
+            <div id="score-container">
+                <button id="best-score">Best score: 0</button>
+                <button id="correct">Success>Correct: 0</button>
+                <button id="incorrect">Incorrect: 0</button>
+            </div>
+        </div>
+        <div id="question-box">
+            <h2 id="question">Question:</h2>
+            <div id="button-list">
+
+            </div>
+        </div>
+        <div id="navigation">
+            <h3>Navigation:</h3>
+            <div class="navigation-buttons">
+                <button onclick="endGame()">Stop</button>
+            </div>
+            <h3>Additional features:</h3>
+            <button onclick="halfWrongAns()">Click to remove half of the wrong answers</button>
+            <button id="pause-button" onclick="togglePause()">Pause</button>
+            <h4>Choose difficulty of next question: </h4>
+            <select name="choose-difficulty" id="choose-difficulty">
+                <option value="any">Any</option>
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+            <button id="confirm-choice" onclick="chooseQuestionDifficulty()">Confirm choice</button>
+        </div>
+
+        
+    </div>
+
+    <div id="GameOver">
+
+        <h1 id="game-outcome">You Win</h1>
+        <h2 id="result">Score</h2>
+            
+    </div>
+
+    <div id="welcome-page">
+        <h1 id="welcome-line"></h1>
+        <h4>Please enter your username: </h4>
+        <input id ='username' type="text" name="username">
+        <h4>Select the bonus category:</h4>
+        <select name="catagory" id="catagory">
+        </select>
+        <button onclick="startScreen()">Click to start new Game</button>
+
+        <div id="leaderboard">
+
+        </div>
+    </div>
+
+    
+
+</body>
+</html>
